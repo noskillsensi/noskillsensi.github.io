@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicativo Noskill - A Mira Perfeita ao seu Alcance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/notiflix@2.6.0/dist/notiflix-aio-2.6.0.min.js"></script>
+    
+    <!-- CÓDIGO DO PIXEL UTMIFY (INSERIDO DIRETAMENTE) -->
+    <script>
+      window.pixelId = "687c11e3a04e4348ef2a8d8d";
+      var a = document.createElement("script");
+      a.setAttribute("async", "");
+      a.setAttribute("defer", "");
+      a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+      document.head.appendChild(a);
+    </script>
+    
+    <!-- CÓDIGO UTM UTMIFY (INSERIDO DIRETAMENTE) -->
+    <script
+      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+      data-utmify-prevent-xcod-sck
+      data-utmify-prevent-subids
+      async
+      defer
+    ></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap');
+        
+        html, body {
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .font-teko {
+            font-family: 'Teko', sans-serif;
+        }
+
+        .notiflix-notify {
+            background-color: #0a0a0a !important; 
+            color: #e5e7eb !important; 
+            border-left: 4px solid #ef4444 !important; /* VERMELHO */
+            box-shadow: 0px 0px 20px rgba(239, 68, 68, 0.25) !important; 
+            border-radius: 8px !important;
+            font-family: 'Poppins', sans-serif !important;
+        }
+
+        .notiflix-notify-message strong {
+            color: #f87171 !important; /* VERMELHO CLARO */
+            font-weight: 700 !important;
+        }
+        
+        .notiflix-notify-icon {
+            margin-right: 12px !important;
+            background-color: rgba(239, 68, 68, 0.1) !important;
+            border-radius: 50% !important;
+            width: 32px !important;
+            height: 32px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+        }
+
+        .notiflix-icon-success svg {
+            fill: #FFFFFF !important;
+            width: 20px !important;
+            height: 20px !important;
+        }
+
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 30s linear infinite;
+        }
+
+        .ken-burns {
+            animation: kenburns 20s ease-out both infinite;
+        }
+        
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .animate-fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .pulse-glow {
+            animation: pulse-glow 2s infinite;
+        }
+
+        .spin-slow {
+            animation: spin 20s linear infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+        }
+        
+        @keyframes kenburns {
+            0% { transform: scale(1) translate(0, 0); }
+            50% { transform: scale(1.1) translate(-2%, 2%); }
+            100% { transform: scale(1) translate(0, 0); }
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(239, 68, 68, 0.4), 0 0 0px 3px rgba(239, 68, 68, 0.6); }
+            50% { box-shadow: 0 0 40px rgba(239, 68, 68, 0.6), 0 0 0px 3px rgba(239, 68, 68, 0.6); }
+        }
+    </style>
+</head>
+<body class="bg-black text-gray-200">
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative flex items-center justify-center pt-20 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-black min-h-screen">
+          <div class="absolute inset-0 z-0">
+            <img src="https://i.imgur.com/iaMeAb7.jpeg" alt="Free Fire Character Background" class="w-full h-full object-cover opacity-30 ken-burns" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
+          </div>
+
+          <div class="relative max-w-5xl mx-auto text-center z-10">
+            <img src="https://i.imgur.com/OfdLSLU.png" alt="Logo Noskill.Sensi" class="mx-auto mb-8 w-40 md:w-56"/>
+
+            <h1 class="font-teko text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white uppercase tracking-wide leading-tight">
+              Sua Mira Nunca <br/> Mais Será a Mesma
+            </h1>
+            
+            <div class="inline-block mt-6 bg-gray-800/50 border border-gray-700 rounded-full px-4 py-2">
+                <p class="font-bold text-base md:text-lg text-red-500">+60.000 JOGADORES SATISFEITOS</p>
+            </div>
+
+            <p class="text-base sm:text-lg text-gray-300 mt-6 mb-8 max-w-2xl mx-auto">
+              Graças a esse aplicativo transformamos a mira de mais de 60 mil jogadores. E o melhor: <span class="font-bold text-red-500">de forma 100% legítima, sem usar hack ou xit.</span>
+            </p>
+
+            <div class="flex items-center justify-center gap-2 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-white"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                <p class="font-teko text-xl sm:text-2xl text-white uppercase tracking-widest">Ative o som para uma experiência completa</p>
+            </div>
+
+            <div class="relative max-w-3xl mx-auto mb-12 rounded-lg overflow-hidden shadow-2xl shadow-red-500/10 border border-red-500/20">
+                <div class="w-full aspect-video">
+                    <iframe 
+                        class="w-full h-full" 
+                        src="https://www.youtube.com/embed/4OH_OYq-pVk?autoplay=1&mute=1&loop=1&playlist=4OH_OYq-pVk&controls=1&showinfo=0&rel=0" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <a href="#planos" class="inline-block bg-red-600 hover:bg-red-700 text-white px-8 sm:px-10 py-3 sm:py-4 rounded-md text-lg sm:text-xl font-bold shadow-lg shadow-red-500/20 hover:shadow-xl hover:shadow-red-500/30 transition-all duration-300 transform hover:scale-105">
+              GARANTIR MEU ACESSO AGORA
+            </a>
+          </div>
+        </section>
+
+        <!-- Animated Marquee Section -->
+        <section class="py-4 bg-gray-950 border-y-2 border-red-500/30">
+            <div class="marquee-container">
+                <div class="marquee-content">
+                    <p class="font-teko text-2xl text-gray-300 uppercase inline-block">
+                        <span class="text-red-500 mx-4">•</span> +48 Funções Nível Hacker <span class="text-red-500 mx-4">•</span> 100% Seguro <span class="text-red-500 mx-4">•</span> Anti-Ban <span class="text-red-500 mx-4">•</span> Resultados Imediatos <span class="text-red-500 mx-4">•</span> Sensi Calibrada <span class="text-red-500 mx-4">•</span> Para Android & iOS
+                        <span class="text-red-500 mx-4">•</span> +48 Funções Nível Hacker <span class="text-red-500 mx-4">•</span> 100% Seguro <span class="text-red-500 mx-4">•</span> Anti-Ban <span class="text-red-500 mx-4">•</span> Resultados Imediatos <span class="text-red-500 mx-4">•</span> Sensi Calibrada <span class="text-red-500 mx-4">•</span> Para Android & iOS
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section (COPY ATUALIZADA) -->
+        <section class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-black">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12 sm:mb-16 reveal">
+                    <p class="font-teko text-2xl text-red-500 mb-2 uppercase tracking-widest">Arsenal Completo</p>
+                    <h2 class="font-teko text-4xl sm:text-5xl md:text-6xl font-bold text-white uppercase">
+                        Funções que te deixam Nível Hacker
+                    </h2>
+                    <p class="text-lg text-gray-400 max-w-3xl mx-auto mt-4">
+                        Veja o impacto real que cada função do <span class="font-bold text-white">Aplicativo Noskill</span> terá na sua jogabilidade:
+                    </p>
+                </div>
+                <div class="relative max-w-sm mx-auto reveal">
+                    <img src="https://i.imgur.com/BxSqWOT.png" alt="Mockup do aplicativo no celular" class="w-full h-auto"/>
+                    <div class="absolute inset-0 top-[13%] bottom-[13%] left-[7%] right-[7%] flex flex-col justify-center items-center p-4 space-y-3 mockup-grid-bg rounded-[28px]">
+                        <div class="w-full bg-gray-900/80 backdrop-blur-sm border border-gray-700 p-3 rounded-lg flex items-center space-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-red-500 flex-shrink-0"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                            <div>
+                                <h3 class="font-bold text-white text-sm">Mira que Gruda</h3>
+                                <p class="text-xs text-gray-400">Aumento de 90% na precisão</p>
+                            </div>
+                        </div>
+                        <div class="w-full bg-gray-900/80 backdrop-blur-sm border border-gray-700 p-3 rounded-lg flex items-center space-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-red-500 flex-shrink-0"><circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line></svg>
+                            <div>
+                                <h3 class="font-bold text-white text-sm">Taxa de HS +200%</h3>
+                                <p class="text-xs text-gray-400">Puxe para cima e encontre a cabeça</p>
+                            </div>
+                        </div>
+                        <div class="w-full bg-gray-900/80 backdrop-blur-sm border border-gray-700 p-3 rounded-lg flex items-center space-x-3">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-red-500 flex-shrink-0"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+                            <div>
+                                <h3 class="font-bold text-white text-sm">Tiros 100% Retos</h3>
+                                <p class="text-xs text-gray-400">Redução total do recuo das armas</p>
+                            </div>
+                        </div>
+                        <div class="w-full bg-gray-900/80 backdrop-blur-sm border border-gray-700 p-3 rounded-lg flex items-center space-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-red-500 flex-shrink-0"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                            <div>
+                                <h3 class="font-bold text-white text-sm">Aumento de +120 FPS</h3>
+                                <p class="text-xs text-gray-400">Jogo mais liso, sem travamentos</p>
+                            </div>
+                        </div>
+                         <div class="w-full bg-gray-900/80 backdrop-blur-sm border border-gray-700 p-3 rounded-lg flex items-center space-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-red-500 flex-shrink-0"><circle cx="12" cy="12" r="10"></circle><polyline points="16 12 12 8 8 12"></polyline><line x1="12" y1="16" x2="12" y2="8"></line></svg>
+                            <div>
+                                <h3 class="font-bold text-white text-sm">Precisão em Movimento</h3>
+                                <p class="text-xs text-gray-400">Acerto garantido mesmo pulando</p>
+                            </div>
+                        </div>
+                        <div class="w-full bg-gray-900/80 backdrop-blur-sm border border-gray-700 p-3 rounded-lg flex items-center space-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-red-500 flex-shrink-0"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg>
+                            <div>
+                                <h3 class="font-bold text-white text-sm">Sensi Calibrada</h3>
+                                <p class="text-xs text-gray-400">Ajuste automático para seu celular</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feedback Section -->
+        <section class="relative py-16 sm:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-black">
+             <div class="absolute inset-0 z-0">
+                <img src="https://i.imgur.com/b42e8755a1fd0f7ce699f70bf8b6030a.jpg" alt="Feedback Background" class="w-full h-full object-cover opacity-20 ken-burns"/>
+                <div class="absolute inset-0 bg-black/80"></div>
+            </div>
+            <div class="relative max-w-7xl mx-auto z-10 reveal">
+                <div class="text-center mb-12 sm:mb-16">
+                    <p class="font-teko text-2xl text-red-500 mb-2 uppercase tracking-widest">A Tropa Não Mente</p>
+                    <h2 class="font-teko text-4xl sm:text-5xl md:text-6xl font-bold text-white uppercase">
+                        Resultados Reais, Jogadores Reais
+                    </h2>
+                    <p class="text-lg text-gray-400 max-w-3xl mx-auto mt-4">
+                        Se liga no que a galera tá falando depois de instalar o app. O resultado é na hora, sem enrolação.
+                    </p>
+                </div>
+                
+                <div class="relative">
+                    <div class="overflow-hidden">
+                        <div
+                            id="carousel-content"
+                            class="flex transition-transform duration-500 ease-in-out"
+                        >
+                            <!-- Imagens do carrossel serão inseridas aqui pelo JS -->
+                        </div>
+                    </div>
+
+                    <button
+                        id="prev-slide"
+                        class="absolute top-1/2 -left-4 md:-left-6 transform -translate-y-1/2 bg-gray-800/50 hover:bg-red-600 text-white p-3 rounded-full transition-all duration-300 z-10"
+                    ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+                    <button
+                        id="next-slide"
+                        class="absolute top-1/2 -right-4 md:-right-6 transform -translate-y-1/2 bg-gray-800/50 hover:bg-red-600 text-white p-3 rounded-full transition-all duration-300 z-10"
+                    ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+                    
+                </div>
+                 <div id="carousel-dots" class="mt-8 text-center flex justify-center space-x-2">
+                    <!-- Pontos do carrossel serão inseridos aqui pelo JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Results Section -->
+        <section class="relative py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gray-950">
+            <div class="absolute inset-0 z-0">
+                <img src="https://i.imgur.com/3cf56338cb52b3238b2e9375c45209b5.jpg" alt="Free Fire Action Background" class="w-full h-full object-cover opacity-20 ken-burns"/>
+                <div class="absolute inset-0 bg-gray-950/80"></div>
+            </div>
+            <div class="relative z-10 max-w-6xl mx-auto text-center reveal">
+                 <p class="font-teko text-2xl text-red-500 mb-2 uppercase tracking-widest">Prova Real, Sem Caô</p>
+                <h2 class="font-teko text-4xl sm:text-5xl md:text-6xl font-bold text-white uppercase">
+                    A Transformação: Antes e Depois
+                </h2>
+                <p class="text-lg text-gray-400 max-w-3xl mx-auto mb-12 mt-4">
+                    Veja a diferença clara na precisão. Menos pinadas, mais capas. Simples assim.
+                </p>
+                <div class="bg-gray-900/50 border border-gray-800 rounded-xl p-4 sm:p-8 max-w-5xl mx-auto">
+                    <div class="grid md:grid-cols-2 gap-4 sm:gap-8 items-center">
+                        <div>
+                            <h3 class="font-teko text-2xl sm:text-3xl text-gray-500 uppercase mb-4">Você, Agora</h3>
+                            <div class="rounded-xl overflow-hidden border-2 border-gray-800">
+                                <img src="https://media.giphy.com/media/uIRj6jFvC7ElfoCbzR/giphy.gif" alt="Jogabilidade sem o aplicativo" class="w-full h-auto" />
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-teko text-2xl sm:text-3xl text-red-500 uppercase mb-4">Você, com o Aplicativo Noskill</h3>
+                            <div class="rounded-xl overflow-hidden border-2 border-red-500/50 shadow-2xl shadow-red-500/20">
+                                <img src="https://media.giphy.com/media/feDXGi5LFUgCYz8EGP/giphy.gif" alt="Jogabilidade com o aplicativo" class="w-full h-auto" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Segurança -->
+        <section class="bg-black py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
+          <div class="max-w-4xl mx-auto text-center reveal">
+            <p class="font-teko text-2xl text-red-500 mb-2 uppercase tracking-widest">Fique Tranquilo</p>
+            <h2 class="font-teko text-4xl sm:text-5xl md:text-6xl font-bold text-white uppercase">
+              Compra 100% Segura e Garantida
+            </h2>
+            <p class="text-lg text-gray-400 max-w-3xl mx-auto mt-4 mb-12">
+              Seus dados estão totalmente protegidos. O pagamento é processado por uma das maiores e mais seguras plataformas de pagamento do Brasil, em um ambiente criptografado de ponta a ponta.
+            </p>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 items-center text-gray-500">
+              <div class="flex flex-col items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                <p class="font-semibold text-sm">AMBIENTE SEGURO</p>
+              </div>
+              <div class="flex flex-col items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <p class="font-semibold text-sm">DADOS CRIPTOGRAFADOS</p>
+              </div>
+              <div class="flex flex-col items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+                <p class="font-semibold text-sm">7 DIAS DE GARANTIA</p>
+              </div>
+              <div class="flex flex-col items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <p class="font-semibold text-sm">ACESSO IMEDIATO</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SEÇÃO DE PLANOS (ATUALIZADA) -->
+        <section id="planos" class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-black">
+          <div class="max-w-6xl mx-auto reveal">
+            <div class="text-center mb-12 sm:mb-16">
+              <p class="font-teko text-2xl text-red-500 mb-2 uppercase tracking-widest">Oferta Por Tempo Limitado</p>
+              <h2 class="font-teko text-4xl sm:text-5xl md:text-6xl font-bold text-white uppercase">
+                Escolha seu Plano
+              </h2>
+              <p class="text-lg text-gray-400 max-w-3xl mx-auto mt-4">
+                Resultado imediato por um preço que cabe no seu bolso. Sem desculpa pra não dominar as partidas.
+              </p>
+            </div>
+
+            <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+              
+              <!-- Plano 1 Mês -->
+              <div class="bg-gray-900/50 border border-gray-800 p-8 text-center transition-all duration-300 h-full flex flex-col rounded-2xl backdrop-blur-sm hover:border-gray-700 hover:scale-105">
+                <h3 class="font-teko text-3xl sm:text-4xl font-bold text-white uppercase">Plano Mensal</h3>
+                <p class="text-gray-400 mb-4">Acesso por 30 dias</p>
+                <p class="text-xl text-gray-500 line-through">De R$9,97</p>
+                <p class="font-teko text-5xl sm:text-6xl font-bold text-white mb-6">R$4<span class="text-3xl text-gray-400">,97</span></p>
+                <div class="border-t border-gray-800 my-6"></div>
+                <ul class="space-y-4 text-gray-300 mb-8 text-left flex-grow">
+                  <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-red-500 mr-3 flex-shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Redução de Recuo em 80%</span></li>
+                  <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-red-500 mr-3 flex-shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Aumento de +120 FPS</span></li>
+                  <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-red-500 mr-3 flex-shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Calibração de Mira Automática</span></li>
+                  <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-red-500 mr-3 flex-shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Suporte via WhatsApp</span></li>
+                </ul>
+                <a href="https://www.ggcheckout.com/checkout/v2/ArlvE9iM7rzThbdCzCkC" target="_blank" rel="noopener noreferrer" class="purchase-link w-full mt-auto inline-block text-center bg-gray-700 hover:bg-gray-600 text-white px-6 py-4 rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-gray-600/20">
+                  ESCOLHER PLANO
+                </a>
+              </div>
+
+              <!-- Plano 3 Meses -->
+              <div class="bg-gray-900/50 border border-gray-800 p-8 text-center transition-all duration-300 h-full flex flex-col rounded-2xl backdrop-blur-sm hover:border-gray-700 hover:scale-105">
+                <h3 class="font-teko text-3xl sm:text-4xl font-bold text-white uppercase">Plano Trimestral</h3>
+                <p class="text-gray-400 mb-4">O melhor custo-benefício</p>
+                <p class="text-xl text-gray-500 line-through">De R$19,97</p>
+                <p class="font-teko text-5xl sm:text-6xl font-bold text-white mb-6">R$9<span class="text-3xl text-gray-400">,97</span></p>
+                <div class="border-t border-gray-800 my-6"></div>
+                <ul class="space-y-4 text-gray-300 mb-8 text-left flex-grow">
+                    <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-red-500 mr-3 flex-shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg><span><span class="font-bold">Tudo do Plano Mensal</span></span></li>
+                    <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-red-500 mr-3 flex-shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Headtracking: <span class="font-bold">Taxa de HS +200%</span></span></li>
+                    <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-red-500 mr-3 flex-shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Módulo de Precisão em Movimento</span></li>
+                    <li class="flex items-center font-bold text-red-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-3 flex-shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg><span>BÔNUS: SENSI DOS FAMOSOS</span></li>
+                </ul>
+                <a href="https://www.ggcheckout.com/checkout/v2/aT5SGnF8vw4cYO1F9raS" target="_blank" rel="noopener noreferrer" class="purchase-link w-full mt-auto inline-block text-center bg-gray-700 hover:bg-gray-600 text-white px-6 py-4 rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-gray-600/20">
+                  ESCOLHER PLANO
+                </a>
+              </div>
+
+              <!-- Plano Vitalício (Destaque) -->
+              <div class="bg-gradient-to-b from-red-900/50 to-gray-900/50 border-2 border-red-500 p-8 text-center relative transform lg:scale-110 shadow-2xl shadow-red-500/20 h-full flex flex-col rounded-2xl backdrop-blur-sm pulse-glow">
+                 <div class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2">
+                  <span class="inline-block px-6 py-2 text-sm text-white bg-red-600 rounded-full font-bold uppercase tracking-wider shadow-lg">Mais Escolhido</span>
+                </div>
+                <h3 class="font-teko text-3xl sm:text-4xl font-bold text-white uppercase">Plano Vitalício</h3>
+                <p class="text-red-300 mb-4">Pague uma vez, use para sempre</p>
+                <p class="text-xl text-red-400/70 line-through">De R$29,97</p>
+                <p class="font-teko text-5xl sm:text-6xl font-bold text-white mb-6">R$14<span class="text-3xl text-red-300">,97</span></p>
+                <div class="border-t border-red-500/30 my-6"></div>
+                <ul class="space-y-4 text-gray-300 mb-8 text-left flex-grow">
+                  <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-red-400 mr-3 flex-shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg><span><span class="font-bold">Tudo dos planos anteriores</span></span></li>
+                  <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-red-400 mr-3 flex-shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Suporte Premium WhatsApp</span></li>
+                  <li class="flex items-center font-bold text-red-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-3 flex-shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg><span>BÔNUS: FUNÇÕES APELONAS VIP</span></li>
+                  <li class="flex items-center font-bold text-red-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-3 flex-shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg><span>BÔNUS: Módulo Secreto de Mira</span></li>
+                </ul>
+                <a href="https://www.ggcheckout.com/checkout/v2/MWmYIHuIC9f4wfTXlUOf" target="_blank" rel="noopener noreferrer" class="purchase-link w-full mt-auto inline-block text-center bg-red-600 hover:bg-red-700 text-white px-6 py-4 rounded-lg font-bold transition-all duration-300 shadow-lg shadow-red-500/40 hover:shadow-red-500/60 transform hover:scale-105">
+                  QUERO ESTE PLANO
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- NOVA SEÇÃO DE GARANTIA -->
+        <section class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gray-950/50 border-y border-gray-800">
+            <div class="max-w-4xl mx-auto text-center reveal">
+                <!-- SÍMBOLO DE GARANTIA ANIMADO (SVG) -->
+                <div class="relative w-32 h-32 mx-auto mb-6">
+                    <svg class="absolute inset-0 w-full h-full spin-slow" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 2.5C23.76 2.5 2.5 23.76 2.5 50C2.5 76.24 23.76 97.5 50 97.5C76.24 97.5 97.5 76.24 97.5 50C97.5 23.76 76.24 2.5 50 2.5ZM48.86 75.6L24.4 51.14L31.26 44.28L48.86 61.88L75.6 35.14L82.46 42L48.86 75.6Z" fill="#EF4444"/>
+                    </svg>
+                    <div class="absolute inset-0 flex items-center justify-center font-teko text-white text-5xl">7</div>
+                </div>
+                <h2 class="font-teko text-4xl sm:text-5xl font-bold text-white uppercase">
+                    Seu Risco é Absolutamente Zero
+                </h2>
+                <p class="text-lg text-gray-400 max-w-3xl mx-auto mt-4">
+                    Temos total confiança de que nosso aplicativo vai transformar sua jogabilidade. Por isso, te damos **7 dias de garantia incondicional**. Se você não sentir uma melhora absurda na sua mira ou não ficar satisfeito por qualquer motivo, é só pedir o reembolso e nós devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- FAQ Section -->
+        <section class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-black">
+          <div class="max-w-4xl mx-auto reveal">
+            <div class="text-center mb-12 sm:mb-16">
+              <p class="font-teko text-2xl text-red-500 mb-2 uppercase tracking-widest">Tire Suas Dúvidas</p>
+              <h2 class="font-teko text-4xl sm:text-5xl md:text-6xl font-bold text-white uppercase">
+                Perguntas Frequentes
+              </h2>
+            </div>
+            <div id="faq-container" class="space-y-4">
+               <!-- FAQ items serão inseridos aqui pelo JS -->
+            </div>
+          </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="relative py-20 px-4 sm:px-6 lg:px-8 bg-gray-950/70">
+            <div class="absolute inset-0 z-0">
+                <img src="https://i.imgur.com/AqCgJZb.jpeg" alt="Final Call to Action Background" class="w-full h-full object-cover opacity-30 ken-burns"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/90 to-black"></div>
+            </div>
+          <div class="relative z-10 max-w-4xl mx-auto text-center reveal">
+            <h2 class="font-teko text-5xl md:text-7xl font-bold text-white uppercase">
+              Pronto para ter a melhor mira?
+            </h2>
+            <p class="text-lg text-gray-400 mt-4 mb-12 max-w-2xl mx-auto">
+              Chega de ficar para trás. Dê a si mesmo a vantagem que você merece e comece a amassar nas ranqueadas hoje mesmo.
+            </p>
+            <a href="#planos" class="inline-block bg-red-600 hover:bg-red-700 text-white px-10 py-4 rounded-md text-xl font-bold shadow-lg shadow-red-500/20 hover:shadow-xl hover:shadow-red-500/30 transition-all duration-300 transform hover:scale-105">
+              ESCOLHER MEU PLANO AGORA
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="py-8 border-t border-gray-800 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-500">
+          <img src="https://i.imgur.com/OfdLSLU.png" alt="Logo Noskill.Sensi" class="mx-auto mb-4 h-12 w-auto" />
+          <p>&copy; 2024 Aplicativo Noskill. Todos os direitos reservados.</p>
+          <p class="text-xs mt-2">Este produto não tem vínculo com a Garena. É uma ferramenta externa que melhora sua jogabilidade e não viola os termos de serviço do jogo.</p>
+        </div>
+      </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // LÓGICA DE ROLAGEM SUAVE (JAVASCRIPT)
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Lógica do Carrossel de Feedback
+            const carouselContent = document.getElementById('carousel-content');
+            const dotsContainer = document.getElementById('carousel-dots');
+            const feedbackImages = [
+                "https://i.imgur.com/NC8sgSy.png", "https://i.imgur.com/UajvZM1.png",
+                "https://i.imgur.com/6LpvOAk.png", "https://i.imgur.com/Pd7spkl.png",
+                "https://i.imgur.com/3GIql6p.png", "https://i.imgur.com/pRBfwHH.png",
+                "https://i.imgur.com/jHHTrMH.png", "https://i.imgur.com/v7VueRe.png",
+                "https://i.imgur.com/rWUmPO3.png", "https://i.imgur.com/66Z2P2J.png",
+                "https://i.imgur.com/nrMDAQ5.png", "https://i.imgur.com/LVTXIzD.png",
+                "https://i.imgur.com/UfdrGJX.png", "https://i.imgur.com/SdR4ZgN.png",
+                "https://i.imgur.com/NXcA8Ji.png", "https://i.imgur.com/fUye6Dw.png",
+                "https://i.imgur.com/bu2IPqW.png", "https://i.imgur.com/xeHd06j.png",
+                "https://i.imgur.com/tBwkBaD.png", "https://i.imgur.com/Rw3UiuI.png"
+            ];
+            let currentSlide = 0;
+
+            function getSlidesInView() {
+                if (window.innerWidth >= 1024) return 3;
+                return 2;
+            }
+
+            function updateCarousel() {
+                if (!carouselContent) return;
+                
+                const slidesInView = getSlidesInView();
+                const maxSlideIndex = Math.max(0, feedbackImages.length - slidesInView);
+
+                if (currentSlide > maxSlideIndex) {
+                    currentSlide = maxSlideIndex;
+                }
+                if (currentSlide < 0) {
+                    currentSlide = 0;
+                }
+
+                const transformPercentage = currentSlide * (100 / slidesInView);
+                carouselContent.style.transform = `translateX(-${transformPercentage}%)`;
+
+                document.querySelectorAll('.carousel-dot').forEach((dot, index) => {
+                    dot.classList.toggle('bg-red-500', index === currentSlide);
+                    dot.classList.toggle('bg-gray-700', index !== currentSlide);
+                });
+            }
+
+            function renderCarousel() {
+                if (!carouselContent || !dotsContainer) return;
+                
+                const slidesInView = getSlidesInView();
+                
+                carouselContent.innerHTML = feedbackImages.map(src => `
+                    <div class="flex-shrink-0 p-2" style="width: ${100 / slidesInView}%">
+                        <img src="${src}" class="w-full h-auto rounded-lg border-2 border-gray-800 shadow-lg" loading="lazy" alt="Feedback de cliente" />
+                    </div>
+                `).join('');
+                
+                const numDots = Math.max(0, feedbackImages.length - slidesInView + 1);
+                dotsContainer.innerHTML = Array.from({ length: numDots }).map((_, index) => `
+                    <button data-slide-to="${index}" class="carousel-dot w-2.5 h-2.5 rounded-full transition-colors duration-300"></button>
+                `).join('');
+                
+                updateCarousel();
+            }
+
+            function navigateCarousel(direction) {
+                const slidesInView = getSlidesInView();
+                const maxSlideIndex = Math.max(0, feedbackImages.length - slidesInView);
+                
+                currentSlide += direction;
+
+                if (currentSlide > maxSlideIndex) {
+                    currentSlide = 0;
+                } else if (currentSlide < 0) {
+                    currentSlide = maxSlideIndex;
+                }
+                updateCarousel();
+            }
+
+            document.getElementById('next-slide')?.addEventListener('click', () => navigateCarousel(1));
+            document.getElementById('prev-slide')?.addEventListener('click', () => navigateCarousel(-1));
+
+            dotsContainer?.addEventListener('click', (e) => {
+                if (e.target.matches('.carousel-dot')) {
+                    currentSlide = parseInt(e.target.dataset.slideTo);
+                    updateCarousel();
+                }
+            });
+
+            window.addEventListener('resize', () => {
+                renderCarousel();
+            });
+
+            renderCarousel();
+
+            // Lógica do FAQ
+            const faqContainer = document.getElementById('faq-container');
+            const faqData = [
+                { question: "O aplicativo dá ban? É seguro?", answer: "Não. Nosso aplicativo é 100% seguro e legalizado pela Garena. Ele funciona como uma ferramenta de otimização e sensibilidade, sem alterar os arquivos do jogo. Pode usar sem medo de banimento." },
+                { question: "Funciona em todos os celulares?", answer: "Sim, o Aplicativo Noskill é compatível com todos os dispositivos Android e iOS. Após a compra, você recebe o acesso para instalar e configurar facilmente no seu celular." },
+                { question: "Como recebo o acesso após a compra?", answer: "A entrega é imediata. Assim que o pagamento for confirmado, você receberá um e-mail com o link para download do aplicativo e todas as instruções de instalação e uso." },
+                { question: "As funções de 'Aimbot' e 'Headtracking' são hacks?", answer: "Não. Nossas ferramentas usam tecnologia legal para simular a precisão de um jogador de elite, mas sem nenhum risco de ban, porque não modificam o jogo." },
+                { question: "Tenho garantia?", answer: "Sim! Oferecemos uma garantia de 7 dias. Se você não sentir uma melhora clara na sua jogabilidade ou não estiver satisfeito por qualquer motivo, devolvemos seu dinheiro." }
+            ];
+            let openFaq = 0;
+
+            function renderFaq() {
+                if (!faqContainer) return;
+                faqContainer.innerHTML = faqData.map((faq, index) => `
+                    <div class="bg-gray-900 border rounded-lg overflow-hidden transition-all duration-300 ${openFaq === index ? 'border-red-500/50' : 'border-gray-800'}">
+                        <button data-faq-index="${index}" class="faq-toggle w-full flex justify-between items-center text-left p-6 cursor-pointer hover:bg-gray-800/50">
+                            <h4 class="font-semibold text-lg text-white pr-4">${faq.question}</h4>
+                            <div class="flex-shrink-0 w-8 h-8 flex items-center justify-center bg-gray-800/50 rounded-full">
+                                <span class="text-red-500 transition-transform duration-300 ${openFaq === index ? 'rotate-180' : ''}">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                </span>
+                            </div>
+                        </button>
+                        <div class="overflow-hidden transition-all duration-500 ease-in-out" style="max-height: ${openFaq === index ? '200px' : '0px'}">
+                            <div class="px-6 pb-6 pt-0">
+                                <p class="text-gray-400">${faq.answer}</p>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+
+                document.querySelectorAll('.faq-toggle').forEach(button => {
+                    button.addEventListener('click', (e) => {
+                        const index = parseInt(e.currentTarget.dataset.faqIndex);
+                        openFaq = openFaq === index ? null : index;
+                        renderFaq();
+                    });
+                });
+            }
+            renderFaq();
+
+            // Lógica do Scroll Reveal
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fade-in');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+            
+            // Lógica das Notificações
+            if (window.Notiflix) {
+                let notificationInterval;
+                function gerarNumeroAleatorio() { return Math.floor(Math.random() * (17 - 3 + 1)) + 3; }
+                function escolherMensagem() {
+                    const mensagens = [
+                        `<strong>Sucesso!</strong> ${gerarNumeroAleatorio()} jogadores compraram o acesso mensal agora`,
+                        `<strong>Aproveite!</strong> ${gerarNumeroAleatorio()} jogadores garantiram o acesso trimestral`,
+                        `<strong>Imperdível!</strong> ${gerarNumeroAleatorio()} jogadores acabaram de comprar o acesso permanente`
+                    ];
+                    return mensagens[Math.floor(Math.random() * mensagens.length)];
+                }
+                const option = { position: 'left-bottom', cssAnimationStyle: 'from-left', plainText: false, timeout: 4000 };
+                function show_notification() { window.Notiflix.Notify.Success(escolherMensagem(), option); }
+                notificationInterval = setInterval(show_notification, 10000);
+            }
+            
+            // Lógica do Rastreamento de IC
+            document.querySelectorAll('.purchase-link').forEach(button => {
+                button.addEventListener('click', function() {
+                    if (typeof fbq === 'function') {
+                        fbq('track', 'InitiateCheckout');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
