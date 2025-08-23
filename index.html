@@ -46,6 +46,29 @@
         content_category: 'Software'
     });
     </script>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+  // 1. Captura todos os parâmetros da URL atual
+  const params = new URLSearchParams(window.location.search);
+
+  // Se não existir nenhum parâmetro, não faz nada
+  if ([...params].length === 0) return;
+
+  // 2. Pega todos os links de checkout
+  document.querySelectorAll(".purchase-link").forEach(link => {
+    const url = new URL(link.href);
+
+    // 3. Copia cada parâmetro da URL da página para o link de checkout
+    params.forEach((value, key) => {
+      url.searchParams.set(key, value);
+    });
+
+    // 4. Atualiza o href do botão com os parâmetros preservados
+    link.href = url.toString();
+  });
+});
+</script>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap');
         
